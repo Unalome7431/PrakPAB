@@ -1,89 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:background="#FAFAFA"
-    android:padding="32dp">
+    android:fillViewport="true"
+    android:background="#FAFAFA">
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lokacara"
-        android:textSize="32sp"
-        android:fontFamily="sans-serif-black"
-        android:textColor="#212121"
-        android:layout_marginBottom="32dp" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:cardElevation="0dp"
-        android:layout_marginBottom="32dp"
-        app:cardBackgroundColor="#FAFAFA">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Halo selamat datang di Lokacara"
+            android:textColor="#212121"
+            android:textAlignment="center"
+            android:textSize="32sp" />
 
-        <ImageView
-            android:id="@+id/ivGambarBebas"
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="#FAFAFA"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/ivGambarBebas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lokacaruy" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Saat ini aplikasi kami masih dalam tahap maintenance"
+            android:textAlignment="center"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/lokacaruy" />
-    </androidx.cardview.widget.CardView>
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra aliquam velit eu vulputate. Integer gravida sodales elit, elementum lobortis justo elementum eu. Aenean in consectetur leo. Fusce ornare purus mauris, non interdum ante mollis faucibus. Nam eget laoreet ipsum, ac malesuada est. Suspendisse potenti. Praesent elementum eget lorem eget pulvinar. Praesent eget quam velit."
+            android:textAlignment="center"
+            android:textColor="#616161" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="halo, saat ini aplikasi kami masih dalam tahap maintenance"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#212121"
-        android:layout_marginBottom="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra aliquam velit eu vulputate. Integer gravida sodales elit, elementum lobortis justo elementum eu. Aenean in consectetur leo. Fusce ornare purus mauris, non interdum ante mollis faucibus. Nam eget laoreet ipsum, ac malesuada est. Suspendisse potenti. Praesent elementum eget lorem eget pulvinar. Praesent eget quam velit."
-        android:textAlignment="center"
-        android:justificationMode="inter_word"
-        android:textColor="#616161"
-        android:lineSpacingExtra="4dp"
-        android:layout_marginBottom="20dp" />
+        <Button
+            android:id="@+id/btnGoToProfile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:text="About Our Project"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        <Button
+            android:id="@+id/btnrepo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:text="Our Github Repository"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="12dp" />
 
-    <Button
-        android:id="@+id/btnGoToProfile"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="About Our Project"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:layout_marginBottom="12dp"
-        app:cornerRadius="12dp"
-        android:backgroundTint="@color/white"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp"
-        />
+        <Button
+            android:id="@+id/btnshare"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:text="Share Repository App"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="12dp" />
 
-    <Button
-        android:id="@+id/btnrepo"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Our Github Repository"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/black"
-        android:textSize="16sp"
-        app:cornerRadius="12dp"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp"
-        />
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

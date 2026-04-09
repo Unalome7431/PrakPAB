@@ -13,10 +13,24 @@ class MainActivity : AppCompatActivity() {
 
         val btnAboutProject = findViewById<Button>(R.id.btnGoToProfile)
         val btnDummy = findViewById<Button>(R.id.btnrepo)
+        val btnshare = findViewById<Button>(R.id.btnshare)
 
         btnAboutProject.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
+        }
+
+        btnshare.setOnClickListener {
+            val teksYangDibagikan = "Halo! berikut merupakan link repository kami: https://github.com/Unalome7431/PrakPAB"
+
+            val sendIntent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, teksYangDibagikan)
+                type = "text/plain"
+            }
+
+            val shareIntent = Intent.createChooser(sendIntent, "Bagikan Lokacara ke:")
+            startActivity(shareIntent)
         }
 
         btnDummy.setOnClickListener {
