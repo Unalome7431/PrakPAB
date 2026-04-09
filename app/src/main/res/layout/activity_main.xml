@@ -9,6 +9,7 @@
     android:padding="32dp">
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lokacara"
@@ -62,9 +63,14 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="About Our Project"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:layout_marginBottom="12dp"
-        app:cornerRadius="12dp" />
+        app:cornerRadius="12dp"
+        android:backgroundTint="@color/white"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        />
 
     <Button
         android:id="@+id/btnrepo"
@@ -72,7 +78,12 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="Our Github Repository"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
         android:textSize="16sp"
-        app:cornerRadius="12dp" />
+        app:cornerRadius="12dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        />
 
 </LinearLayout>
