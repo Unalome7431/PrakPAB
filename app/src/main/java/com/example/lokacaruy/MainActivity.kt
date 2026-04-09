@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         val btnDummy = findViewById<Button>(R.id.btnrepo)
 
         btnAboutProject.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
         }
 
         btnDummy.setOnClickListener {
