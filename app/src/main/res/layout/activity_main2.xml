@@ -95,14 +95,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nama Anggota 2"
+                        android:text="Zuljuhdi Nurnubli"
                         android:textStyle="bold"
                         android:textSize="15sp"
                         android:textColor="#FFFFFF"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="NIM: 87654321"
+                        android:text="NIM: L0124083"
                         android:textSize="13sp"
                         android:textColor="#BDBDBD"/>
                 </LinearLayout>
@@ -129,14 +129,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nama Anggota 3"
+                        android:text="Ahmad Aditya Nugraha"
                         android:textStyle="bold"
                         android:textSize="15sp"
                         android:textColor="#FFFFFF"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="NIM: 87654321"
+                        android:text="NIM: L0124084"
                         android:textSize="13sp"
                         android:textColor="#BDBDBD"/>
                 </LinearLayout>
@@ -163,14 +163,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nama Anggota 4"
+                        android:text="Andika Bahari Suryanegara"
                         android:textStyle="bold"
                         android:textSize="15sp"
                         android:textColor="#FFFFFF"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="NIM: 87654321"
+                        android:text="NIM: L0124087"
                         android:textSize="13sp"
                         android:textColor="#BDBDBD"/>
                 </LinearLayout>
@@ -197,14 +197,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nama Anggota 5"
+                        android:text="Daffa Arrivo Aryanto"
                         android:textStyle="bold"
                         android:textSize="15sp"
                         android:textColor="#FFFFFF"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="NIM: 87654321"
+                        android:text="NIM: L0124093"
                         android:textSize="13sp"
                         android:textColor="#BDBDBD"/>
                 </LinearLayout>

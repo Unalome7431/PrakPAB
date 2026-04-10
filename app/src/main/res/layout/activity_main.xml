@@ -91,7 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:backgroundTint="@color/black"
-            android:text="Share Repository App"
+            android:text="Share Lokacara's Repository"
             android:textColor="@color/white"
             android:textSize="16sp"
             app:cornerRadius="12dp" />
