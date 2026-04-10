@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnAboutProject = findViewById<Button>(R.id.btnGoToProfile)
-        val btnDummy = findViewById<Button>(R.id.btnrepo)
+        val btnrepo = findViewById<Button>(R.id.btnrepo)
         val btnshare = findViewById<Button>(R.id.btnshare)
 
         btnAboutProject.setOnClickListener {
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(shareIntent)
         }
 
-        btnDummy.setOnClickListener {
+        btnrepo.setOnClickListener {
             val linkTujuan = "https://github.com/Unalome7431/PrakPAB"
 
             val intentBukaBrowser = Intent(Intent.ACTION_VIEW, Uri.parse(linkTujuan))
